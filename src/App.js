@@ -72,7 +72,8 @@ const AppRoutes = ({
             />
           }
         />
-        <Route path="/signup" element={<SignUp />} />
+       <Route path="/signup" element={<SignUp onLogin={handleLogin} />} />
+
 
         <Route
           path="/Home"

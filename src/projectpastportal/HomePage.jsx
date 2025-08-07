@@ -151,7 +151,7 @@ const HomePage = () => {
       lat: 34.2,
       lng: 108.9,
       desc: 'Invented in China around 105 AD, paper revolutionized record-keeping and communication.',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/2/23/Ancient_Chinese_Paper.jpg'
+      image: 'https://exploremyindia.in/wp-content/uploads/2015/06/Who-Invented-Paper-568x430.jpg'
     },
     {
       name: 'Concrete',
@@ -159,7 +159,7 @@ const HomePage = () => {
       lat: 41.9,
       lng: 12.5,
       desc: 'Developed by the Romans, concrete allowed the creation of massive enduring structures.',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/1/1d/Roman_Concrete_Wall.jpg'
+      image: 'https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_2,w_3840,h_1920,g_auto/dpr_auto/f_auto/q_auto:eco/v1/gettyimages-990225936?_a=BAVAZGDX0'
     },
     {
       name: 'Mechanical Clock',
@@ -167,7 +167,7 @@ const HomePage = () => {
       lat: 51.5,
       lng: -0.12,
       desc: 'Medieval Europe developed mechanical clocks, improving timekeeping accuracy.',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/d/d8/Salisbury_Cathedral_clock.jpg'
+      image: 'https://collectionapi.metmuseum.org/api/collection/v1/iiif/194195/478863/main-image'
     },
     {
       name: 'Stirrups',
@@ -175,7 +175,7 @@ const HomePage = () => {
       lat: 35.0,
       lng: 103.0,
       desc: 'Stirrups originated in China, transforming cavalry tactics and medieval warfare.',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Ancient_Chinese_Stirrup.jpg'
+      image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/%E9%8E%8F%E9%87%91%E6%9C%A8%E8%8A%AF%E9%A9%AC%E9%95%AB06337.jpg/640px-%E9%8E%8F%E9%87%91%E6%9C%A8%E8%8A%AF%E9%A9%AC%E9%95%AB06337.jpg'
     },
     {
       name: 'Microscope',
@@ -183,7 +183,7 @@ const HomePage = () => {
       lat: 51.9,
       lng: 4.5,
       desc: 'Invented in the Netherlands, the microscope opened the door to microbiology.',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/7/71/Antoni_van_Leeuwenhoek_Microscope.jpg'
+      image: 'https://preview.redd.it/aydbgeny4ol91.jpg?width=640&crop=smart&auto=webp&s=afbfcb7d9a63b937c6299a491331e14c28f6f2a6'
     },
     {
       name: 'Locomotive',
@@ -191,15 +191,15 @@ const HomePage = () => {
       lat: 55.0,
       lng: -1.6,
       desc: 'George Stephenson’s steam locomotive pioneered modern railway transport.',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/f/fd/Rocket_001.jpg'
+      image: 'https://www.northeastmuseums.org.uk/images/900/bzM5-4812-content.jpg'
     },
     {
- name: 'Photography',
+      name: 'Photography',
       era: 'Industrial',
       lat: 48.85,
       lng: 2.35,
       desc: 'Louis Daguerre and Joseph Nicéphore Niépce developed photography in the 19th century.',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/b/b5/Daguerreotype_camera.jpg'
+      image: 'https://akm-img-a-in.tosshub.com/indiatoday/images/bodyeditor/201807/The-Daguerreotype-Camera-1839-1_0-647x568.jpg?7SrP1vmMK5ISIwGqS97aKrXBdOS_7zg_'
     },
     {
       name: 'Television',
@@ -207,7 +207,7 @@ const HomePage = () => {
       lat: 55.9,
       lng: -3.2,
       desc: 'Developed in the early 20th century, television transformed global entertainment and communication.',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/5/51/First_TV_Set.jpg'
+      image: 'https://www.thoughtco.com/thmb/0qmRzKjWu0OuI5i_VSSMHNevNzw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-680882197-58f4d5d65f9b582c4dd4a776.jpg'
     },
     {
       name: 'Penicillin',
@@ -215,7 +215,7 @@ const HomePage = () => {
       lat: 51.5,
       lng: -0.13,
       desc: 'Discovered by Alexander Fleming in 1928, penicillin revolutionized medicine as the first true antibiotic.',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/0/04/Alexander_Fleming_Laboratory.jpg'
+      image: 'https://upload.wikimedia.org/wikipedia/commons/a/a8/Sample_of_penicillin_mould_presented_by_Alexander_Fleming_to_Douglas_Macleod%2C_1935_%289672239344%29.jpg'
     },
     {
       name: 'Satellite',
@@ -223,7 +223,7 @@ const HomePage = () => {
       lat: 28.6,
       lng: 77.2,
       desc: 'Sputnik and later satellites revolutionized communication, navigation, and space exploration.',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/8/8b/Sputnik_1.jpg'
+      image: 'https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2002/01/tiros_satellite/9149093-6-eng-GB/TIROS_satellite_pillars.jpg'
     },
 
       {
@@ -232,7 +232,7 @@ const HomePage = () => {
       lat: 34.3,
       lng: 108.9,
       desc: 'An ancient calculating tool used in Mesopotamia, China, and Egypt for arithmetic operations.',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/2/27/Suanpan_abacus_2.jpg'
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmDKO4M-dn9rqjxHUc_4Pr0QKq0FCczPo6NvUXW5vgZ91k6O1prkqwupDiYLdGh5PY1uo&usqp=CAU'
     },
     {
       name: 'Water Mill',
@@ -240,7 +240,7 @@ const HomePage = () => {
       lat: 37.9,
       lng: 23.7,
       desc: 'Used in ancient Greece and Rome to grind grain and power simple machinery with flowing water.',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/e/e7/Ancient_water_mill.jpg'
+      image: 'https://www.shutterstock.com/image-photo/working-watermill-wheel-falling-water-260nw-1447290644.jpg'
     },
     {
       name: 'Windmill',
@@ -248,7 +248,7 @@ const HomePage = () => {
       lat: 52.1,
       lng: 5.1,
       desc: 'First developed in Persia and popularized in Europe for grinding grain and pumping water.',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/0/0c/Dutch_windmill.jpg'
+      image: 'https://windcycle.energy/wp-content/uploads/2022/11/windmills-definition-2-1.jpg'
     },
     {
       name: 'Astrolabe',
@@ -256,7 +256,7 @@ const HomePage = () => {
       lat: 36.7,
       lng: 3.0,
       desc: 'An ancient astronomical device used by Islamic scholars to measure celestial positions for navigation.',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/1/16/Astrolabe_Mariner.jpg'
+      image: 'https://idsb.tmgrup.com.tr/2015/07/16/GenelBuyuk/a-depiction-of-mariam-al-ijliya-a-famous-astrolabe-1437076290534_rs.jpg'
     },
     {
       name: 'Printing with Movable Type',
@@ -264,7 +264,7 @@ const HomePage = () => {
       lat: 35.0,
       lng: 103.0,
       desc: 'Bi Sheng in China invented movable clay type printing in the 11th century, a precursor to Gutenberg’s press.',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Movable_Type_Printing.jpg'
+      image: 'https://miro.medium.com/v2/resize:fit:960/0*8LMKZqPYU_lZ3Hs5.'
     },
     {
       name: 'Parachute',
@@ -272,7 +272,7 @@ const HomePage = () => {
       lat: 45.4,
       lng: 9.2,
       desc: 'Concepts by Leonardo da Vinci led to parachute designs to safely descend from heights.',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Da_Vinci_Parachute.jpg'
+      image: 'https://www.juliantrubin.com/bigten/davinciparachute_files/leonardo_da_vinci_parachute.jpg'
     },
     {
       name: 'Battery',
@@ -280,7 +280,7 @@ const HomePage = () => {
       lat: 45.1,
       lng: 7.7,
       desc: 'Alessandro Volta created the first electric battery in 1800, enabling portable power.',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Voltaic_pile.jpg'
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6KGJX8lgltjS2DndcMgLGVNIhsVZscD3FMofF6Qi4MLClePZQDgB9ABEIpt_OANf_FJs&usqp=CAU'
     },
     {
       name: 'Typewriter',
@@ -288,7 +288,7 @@ const HomePage = () => {
       lat: 40.7,
       lng: -74.0,
       desc: 'The typewriter revolutionized writing efficiency in the 19th century, shaping modern communication.',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/8/81/Remington_typewriter.jpg'
+      image: 'https://nationalcioreview.com/wp-content/uploads/2023/06/typewriter-Remington-Standard-Frederick-Douglass.webp'
     },
     {
       name: 'Nuclear Reactor',
@@ -296,7 +296,7 @@ const HomePage = () => {
       lat: 41.8,
       lng: -87.6,
       desc: 'The first controlled nuclear chain reaction took place in Chicago in 1942, leading to nuclear energy.',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/0/0a/Chicago_Pile-1.jpg'
+      image: 'https://cdn.mos.cms.futurecdn.net/FC8fsR53AUmaSMG2dtYaZE-1200-80.jpg'
     },
     {
       name: 'Smartphone',
@@ -304,7 +304,7 @@ const HomePage = () => {
       lat: 37.3,
       lng: -122.0,
       desc: 'Combining computing, communication, and multimedia, smartphones revolutionized modern life.',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/f/f1/IPhone_1st_gen.jpg'
+      image: 'https://a.storyblok.com/f/252707/4096x2304/4cd871740d/blog_header_marting_cooper_2.webp'
     }
 
 

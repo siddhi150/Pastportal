@@ -89,8 +89,16 @@
   color: #2a2f45;
 }
 
+ .scientist-card-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+} 
+
 /* ===================== Modal Overlay ===================== */
-.modal-overlay {
+/* .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -102,22 +110,57 @@
   justify-content: center;
   z-index: 9999;
   animation: fadeIn 0.3s ease;
+} */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+min-height: 100vh;
+  width: 100vw;
+  background: rgba(30, 30, 30, 0.55);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
 }
 
 .modal-card {
-  background: linear-gradient(135deg, #ffffff, #f9f9f9);
-  padding: 1.5rem;
-  border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
-  border: 1px solid #e2e8f0;
-  position: relative;
-  max-width: 550px;
+  background: linear-gradient(135deg, #fff7f0, #f9f4ec);
+  border-radius: 24px;
+  padding: 2.5rem;
   width: 90%;
+  max-width: 1000px;
+  max-height: 98vh; /* Limit height to 90% of viewport */
+  min-height: 600px;
   overflow-y: auto;
-  max-height: 85vh;
-  animation: scaleIn 0.3s ease;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+  animation: scaleIn 0.35s ease-in-out;
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+}
+/* .scientist-modal-img {
+  width: 80%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+} */
+ /*.scientist-modal-img {
+  width: 55%;
+  height: 400px; /* Set a fixed height for better control 
+  object-fit: cover;
+  object-position: top left; /* Show top-left part of image 
+  border-radius: 16px 16px 0 0;
+  margin-bottom: 1.5rem;
+  display: block;
 }
 
+/* Close button styling */
 .close-btn {
   position: absolute;
   top: 12px;
@@ -133,6 +176,82 @@
 .close-btn:hover {
   color: #e74c3c;
 }
+
+
+.modal-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.scientist-modal-img {
+  width: 45%;
+  height: 400px;
+  object-fit: cover;
+  object-position: top left;
+  border-radius: 16px;
+  flex-shrink: 0;
+}
+
+/* .scientist-modal-details {
+  flex: 1;
+  min-width: 250px;
+  font-size: 1.05rem;
+  color: #2c3e50;
+} */
+
+.scientist-modal-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.6rem;
+}
+
+.invention-details {
+  width:100%; /* ⬅️ Increased width */
+  height: auto; /* ⬅️ Let height be based on content */
+  margin: 2rem auto 0 auto; /* ⬅️ Centered horizontally */
+  background: #f1e9e1;
+  padding: 1rem 1.5rem;
+  border-radius: 14px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.04);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+
+.invention-details h3 {
+  margin-bottom: 0.6rem;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.invention-details p {
+  line-height: 1.7;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+/* ========= Responsive Design ========== */
+@media (max-width: 768px) {
+  .modal-card {
+    width: 95%;
+    min-width: unset;
+    min-height: unset;
+    max-height: 95vh;
+    padding: 1.5rem;
+  }
+
+  .close-btn {
+    font-size: 1.2rem;
+    top: 10px;
+    right: 12px;
+  }
+}
+
 
 /* ===================== Animations ===================== */
 @keyframes fadeIn {
@@ -175,4 +294,17 @@
   .modal-card {
     padding: 1.2rem;
   }
+
+@media (max-width: 768px) {
+  .modal-content-wrapper {
+    flex-direction: column;
+  }
+
+  .scientist-modal-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
 }

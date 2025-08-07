@@ -20,9 +20,9 @@ function CenturyMap() {
             inventor: {
                 name: 'Claudius Ptolemy',
                 bio: 'Claudius Ptolemy was a Greek mathematician, astronomer, and geographer whose work became the basis for European cartography.',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/3/3b/Ptolemy_-_The_Almagest.jpg'
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQultMW2hIkallFo3wPT09kWnmf6XhpGJnnIw&sS'
             },
-            image: 'https://upload.wikimedia.org/wikipedia/commons/5/5e/PtolemyWorldMap.jpg'
+            image: 'https://c8.alamy.com/comp/H9HRKP/martellus-henricus-15th-century-map-of-the-world-H9HRKP.jpg'
         },
         '16': {
             title: '16th Century Mercator Projection',
@@ -30,9 +30,9 @@ function CenturyMap() {
             inventor: {
                 name: 'Gerardus Mercator',
                 bio: 'Gerardus Mercator was a Flemish cartographer, geographer, and mathematician known for creating the Mercator projection.',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/0/0e/Gerardus_Mercator_2.jpg'
+                image: 'https://upload.wikimedia.org/wikipedia/commons/e/e6/Gerardo_Mercatore_-_Gerardus_Mercator.jpg'
             },
-            image: 'https://upload.wikimedia.org/wikipedia/commons/5/58/Mercator_1569.png'
+            image: 'https://media.sciencephoto.com/e0/56/00/73/e0560073-800px-wm.jpg'
         },
         '17': {
             title: '17th Century World Map by Blaeu',
@@ -40,9 +40,9 @@ function CenturyMap() {
             inventor: {
                 name: 'Willem Blaeu',
                 bio: 'Willem Blaeu was a Dutch cartographer and publisher who produced some of the most important maps of the 17th century.',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/f/fd/Willem_Blaeu.jpg'
+                image: 'https://freeyorkk.b-cdn.net/wp-content/uploads/2016/12/3618020deb973dd690a6a631a6b7939b.jpg'
             },
-            image: 'https://upload.wikimedia.org/wikipedia/commons/e/e3/Blaeu_1645.jpg'
+            image: 'https://m.media-amazon.com/images/I/81tMBpfgz9L._UF1000,1000_QL80_.jpg'
         },
         '18': {
             title: '18th Century Map of North America',
@@ -50,9 +50,9 @@ function CenturyMap() {
             inventor: {
                 name: 'John Mitchell',
                 bio: 'John Mitchell was an English cartographer known for his detailed maps of North America during the colonial period.',
-                image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/John_Mitchell_Map_1755.jpg/400px-John_Mitchell_Map_1755.jpg'
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXBNsZvDjEEuEVW-CNbTF_AmoPBIxR4vXOnhZMUeFm1U9QQyq0HOjipxmu9dTWGUrqV24&usqp=CAU'
             },
-            image: 'https://upload.wikimedia.org/wikipedia/commons/1/1f/John_Mitchell_Map_1755.jpg'
+            image: 'https://media.sciencephoto.com/image/e0560050/800wm'
         }
     });
 
