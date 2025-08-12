@@ -1,12 +1,10 @@
 // import React, { useState } from 'react';
-
+// import { useNavigate } from 'react-router-dom';
 
 // const ContactPage = () => {
-//   const [sidebarActive, setSidebarActive] = useState(false);
-
-//   const toggleMenu = () => {
-//     setSidebarActive(!sidebarActive);
-//   };
+//   const [processing, setProcessing] = useState(false);
+//   const [showThankYou, setShowThankYou] = useState(false);
+//   const navigate = useNavigate();
 
 //   const validateForm = (e) => {
 //     e.preventDefault();
@@ -17,12 +15,24 @@
 //       alert('Please fill out all required fields.');
 //       return;
 //     }
-//     alert('Thank you for your message!');
+
+//     // Start processing animation
+//     setProcessing(true);
+
+//     // Simulate 5 seconds processing
+//     setTimeout(() => {
+//       setProcessing(false);
+//       setShowThankYou(true);
+
+//       // Show thank you for 3 seconds then redirect to Home page
+//       setTimeout(() => {
+//         navigate('/home');
+//       }, 3000);
+//     }, 5000);
 //   };
 
 //   return (
 //     <>
-   
 //       <style>{`
 //         body {
 //           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -39,7 +49,7 @@
 
 //         h2 {
 //           font-size: 2.5rem;
-//          color: #2c3e50;
+//           color: #2c3e50;
 //           margin-bottom: 1rem;
 //         }
 
@@ -130,26 +140,86 @@
 //           text-decoration: underline;
 //         }
 
-//         footer {
-//           background: #2c3e50;
-//           color: white;
-//           padding: 1rem 0;
-//           text-align: center;
-//           font-size: 0.95rem;
+//         /* ================= Processing Modal ================= */
+//         .processing-modal {
+//           position: fixed;
+//           top: 0;
+//           left: 0;
+//           width: 100%;
+//           height: 100%;
+//           background: rgba(0, 0, 0, 0.1);
+//           backdrop-filter: blur(6px);
+//           display: flex;
+//           flex-direction: column;
+//           justify-content: center;
+//           align-items: center;
+//           z-index: 9999;
 //         }
 
-//         footer a {
-//           color: #1abc9c;
-//           margin: 0 0.25rem;
-//           text-decoration: none;
+//         /* Black Circular Spinner */
+//         .spinner {
+//           width: 80px;
+//           height: 80px;
+//           border: 8px solid rgba(0, 0, 0, 0.2);
+//           border-top: 8px solid black;
+//           border-radius: 50%;
+//           animation: spin 1s linear infinite;
+//           margin-bottom: 20px;
 //         }
 
-//         footer a:hover {
-//           text-decoration: underline;
+//         @keyframes spin {
+//           0% { transform: rotate(0deg); }
+//           100% { transform: rotate(360deg); }
+//         }
+
+//         .processing-text {
+//           color: black;
+//           font-size: 1.5rem;
+//           font-weight: bold;
+//           text-shadow: 0 0 5px rgba(0,0,0,0.2);
+//         }
+
+//         /* ================= Thank You Overlay ================= */
+//         .thank-you-overlay {
+//           position: fixed;
+//           top: 0;
+//           left: 0;
+//           width: 100%;
+//           height: 100%;
+//           background: rgba(255, 255, 255, 0.3);
+//           backdrop-filter: blur(12px);
+//           display: flex;
+//           justify-content: center;
+//           align-items: center;
+//           z-index: 10000;
+//         }
+
+//         .thank-you {
+//           font-size: 4rem;
+//           font-weight: bold;
+//           color: black;
+//           font-family: 'Comic Sans MS', 'Cooper Black', cursive;
+//           animation: slideInBounce 2.5s forwards;
+//           text-shadow: 2px 2px 0px #fff, 5px 5px 0px rgba(0,0,0,0.3);
+//         }
+
+//         @keyframes slideInBounce {
+//           0% {
+//             transform: translateX(-100%) scale(0.8);
+//             opacity: 0;
+//           }
+//           60% {
+//             transform: translateX(10%) scale(1.05);
+//             opacity: 1;
+//           }
+//           80% {
+//             transform: translateX(-5%) scale(0.95);
+//           }
+//           100% {
+//             transform: translateX(0) scale(1);
+//           }
 //         }
 //       `}</style>
-// {/* 
-//       <Navbar /> */}
 
 //       <div className="content">
 //         <h2>Welcome to PastPortals</h2>
@@ -201,19 +271,24 @@
 //         </div>
 //       </div>
 
-//       {/* <footer>
-//         <p>&copy; 2025 PastPortals. All rights reserved.</p>
-//         <p>Follow us on
-//           <a href="#" aria-label="Facebook"> Facebook</a>,
-//           <a href="#" aria-label="Twitter"> Twitter</a>,
-//           <a href="#" aria-label="Instagram"> Instagram</a>
-//         </p>
-//       </footer> */}
+//       {processing && (
+//         <div className="processing-modal">
+//           <div className="spinner"></div>
+//           <div className="processing-text">Processing...</div>
+//         </div>
+//       )}
+
+//       {showThankYou && (
+//         <div className="thank-you-overlay">
+//           <div className="thank-you">THANK YOU!</div>
+//         </div>
+//       )}
 //     </>
 //   );
 // };
 
 // export default ContactPage;
+
 
 
 import React, { useState } from 'react';
@@ -224,30 +299,72 @@ const ContactPage = () => {
   const [showThankYou, setShowThankYou] = useState(false);
   const navigate = useNavigate();
 
-  const validateForm = (e) => {
-    e.preventDefault();
-    const name = e.target.name.value.trim();
-    const email = e.target.email.value.trim();
+  // const validateForm = (e) => {
+  //   e.preventDefault();
+  //   const name = e.target.name.value.trim();
+  //   const email = e.target.email.value.trim();
 
-    if (!name || !email) {
-      alert('Please fill out all required fields.');
-      return;
-    }
+  //   if (!name || !email) {
+  //     alert('Please fill out all required fields.');
+  //     return;
+  //   }
 
-    // Start processing animation
-    setProcessing(true);
+  //   // Start processing animation
+  //   setProcessing(true);
 
-    // Simulate 5 seconds processing
-    setTimeout(() => {
-      setProcessing(false);
+  //   // Simulate 5 seconds processing
+  //   setTimeout(() => {
+  //     setProcessing(false);
+  //     setShowThankYou(true);
+
+  //     // Show thank you for 3 seconds then redirect to Home page
+  //     setTimeout(() => {
+  //       navigate('/home');
+  //     }, 3000);
+  //   }, 5000);
+  // };
+  const validateForm = async (e) => {
+  e.preventDefault();
+  const name = e.target.name.value.trim();
+  const email = e.target.email.value.trim();
+  const phone = e.target.phone.value.trim();
+  const subject = e.target.subject.value.trim();
+  const message = e.target.message.value.trim();
+
+  if (!name || !email || !phone || !subject || !message) {
+    alert('Please fill out all required fields.');
+    return;
+  }
+
+  // Start processing animation
+  setProcessing(true);
+
+  try {
+    const response = await fetch('http://localhost:5000/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ name, email, phone, subject, message }),
+    });
+
+    if (response.ok) {
       setShowThankYou(true);
-
-      // Show thank you for 3 seconds then redirect to Home page
       setTimeout(() => {
         navigate('/home');
       }, 3000);
-    }, 5000);
-  };
+    } else {
+      alert('Failed to submit the form. Please try again.');
+    }
+  } catch (error) {
+    console.error('Error submitting form:', error);
+    alert('An error occurred. Please try again later.');
+  } finally {
+    setProcessing(false);
+  }
+};
+
+
 
   return (
     <>

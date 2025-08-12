@@ -6,6 +6,7 @@ import {
   Navigate,
   useLocation,
 } from 'react-router-dom';
+import VideoTest from './projectpastportal/VideoTest';
 
 import LandingPage from './projectpastportal/LandingPage';
 import LoginPage from './projectpastportal/Login';
@@ -61,7 +62,9 @@ const AppRoutes = ({
             />
           }
         />
-        <Route
+<Route path="/videotest" element={<VideoTest />} />
+
+       <Route
           path="/login"
           element={
             <LoginPage

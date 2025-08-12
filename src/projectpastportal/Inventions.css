@@ -258,4 +258,7 @@
   .invention-modal-content h3 {
     font-size: 1.4rem;
   }
+  .modal-body{
+    display: flex;
+  }
 }
